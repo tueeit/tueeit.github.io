@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/cypress/downloads
+/cypress/screenshots
+/cypress/videos
+/cypress/results
+/cypress-report
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# variable
+.env*
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# version
+public/next/version.txt
+
+# misc
+.DS_Store
+.nyc_output
