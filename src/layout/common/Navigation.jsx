@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import Link from 'next/link';
 import { Flex, Spacer, Stack, Button } from '@chakra-ui/react';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   left: 0;

@@ -2,9 +2,16 @@ import styled from '@emotion/styled';
 import Link from 'next/link';
 import { Flex, Spacer, Stack } from '@chakra-ui/react';
 
+const Wrapper = styled.footer`
+  display: flex;
+  padding: 4em 1.5em 2em;
+  background-color: #274079;
+  color: azure;
+`;
+
 const Footer = () => {
   return (
-    <Flex as="footer" padding="2em 1.5em" background="#274079" color="azure">
+    <Wrapper>
       <Stack direction="row" spacing="1em">
         <Link href="/contact">
           <a>聯絡我們</a>
@@ -18,7 +25,7 @@ const Footer = () => {
       </Stack>
       <Spacer />
       <Flex>社群平台</Flex>
-    </Flex>
+    </Wrapper>
   );
 };
 
