@@ -4,7 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import '../styles/global.css';
 
 function MyApp({ Component, pageProps }) {
-  return (re
+  return (
     <ChakraProvider>
       <Helmet
         htmlAttributes={{ lang: 'zh-hant' }}
