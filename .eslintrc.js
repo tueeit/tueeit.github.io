@@ -8,7 +8,6 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     '@next/next/no-img-element': 'off',
-    'func-style': ['error', 'declaration'],
     'jsx-a11y/anchor-is-valid': 'off',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'prettier/prettier': 'error',
