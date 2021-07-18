@@ -1,7 +1,6 @@
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 
-
-import '../styles/global.css'
+import '../styles/global.css';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -19,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
