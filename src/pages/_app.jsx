@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { ChakraProvider } from '@chakra-ui/react';
+import Layout from '@/layout/common';
 
 import '../styles/global.css';
 
@@ -17,7 +18,9 @@ function MyApp({ Component, pageProps }) {
           { property: 'og:title', content: '台灣電子電機資訊產業工會' },
         ]}
       />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ChakraProvider>
   );
 }
