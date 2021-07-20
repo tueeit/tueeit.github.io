@@ -7,7 +7,7 @@ const CommonLayout = ({ children }) => {
   return (
     <Provider>
       <Navigation />
-      <Container maxW="2xl" paddingTop="64px" minHeight="calc(100vh - 120px)" as="main">
+      <Container maxW="3xl" paddingY="64px" minHeight="calc(100vh - 120px)" as="main">
         {children}
       </Container>
       <Footer />
