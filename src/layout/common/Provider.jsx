@@ -5,6 +5,7 @@ import { ListItem, OrderedList, UnorderedList } from '@chakra-ui/react';
 import { Table, Tr, Th, Td } from '@chakra-ui/react';
 import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
+import YouTube from 'react-youtube';
 
 const components = {
   p: Paragraph,
@@ -26,6 +27,7 @@ const components = {
   inlineCode: Code,
   hr: Divider,
   a: Link,
+  YouTube: YouTube,
 };
 
 const Provider = ({ children }) => {
