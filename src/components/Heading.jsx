@@ -10,7 +10,7 @@ export const Heading1 = ({ children }) => {
 
 export const Heading2 = ({ children }) => {
   return (
-    <Heading as="h2" size="lg">
+    <Heading as="h2" size="lg" marginY="0.67em">
       {children}
     </Heading>
   );
@@ -18,7 +18,7 @@ export const Heading2 = ({ children }) => {
 
 export const Heading3 = ({ children }) => {
   return (
-    <Heading as="h3" size="md">
+    <Heading as="h3" size="md" marginY="0.67em">
       {children}
     </Heading>
   );
@@ -26,7 +26,7 @@ export const Heading3 = ({ children }) => {
 
 export const Heading4 = ({ children }) => {
   return (
-    <Heading as="h4" size="sm">
+    <Heading as="h4" size="sm" marginY="0.67em">
       {children}
     </Heading>
   );
@@ -34,7 +34,7 @@ export const Heading4 = ({ children }) => {
 
 export const Heading5 = ({ children }) => {
   return (
-    <Heading as="h5" size="xs">
+    <Heading as="h5" size="xs" marginY="0.67em">
       {children}
     </Heading>
   );
