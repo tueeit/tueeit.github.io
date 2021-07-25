@@ -6,6 +6,7 @@ import { Table, Tr, Th, Td } from '@chakra-ui/react';
 import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import Anchor from '@/components/Anchor';
+import Block from '@/components/Block';
 import YouTube from 'react-youtube';
 
 const HR = () => {
@@ -28,7 +29,7 @@ const components = {
   tr: Tr,
   th: Th,
   td: Td,
-  code: Code,
+  code: Block,
   inlineCode: Code,
   hr: HR,
   a: Anchor,
