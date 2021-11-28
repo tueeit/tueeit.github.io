@@ -13,13 +13,13 @@ const Footer = () => {
   return (
     <Wrapper>
       <Stack direction="row" spacing="1em">
-        <Link href="/contact">
+        <Link href="mailto:tueeit@tueeit.org.tw">
           <a>聯絡我們</a>
         </Link>
         <Link href="/faq">
           <a>常見問題</a>
         </Link>
-        <Link href="/docs">
+        <Link href="/document">
           <a>參考文件</a>
         </Link>
       </Stack>
