@@ -1,12 +1,14 @@
 import { MDXProvider } from '@mdx-js/react';
 
-import { Image, Code, Divider } from '@chakra-ui/react';
+import { Image, Divider } from '@chakra-ui/react';
 import { ListItem, OrderedList, UnorderedList } from '@chakra-ui/react';
 import { Table, Tr, Th, Td } from '@chakra-ui/react';
 import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6 } from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import Anchor from '@/components/Anchor';
 import Block from '@/components/Block';
+import InlineCode from '@/components/InlineCode';
+import Quote from '@/components/Quote';
 import YouTube from 'react-youtube';
 
 const HR = () => {
@@ -30,10 +32,11 @@ const components = {
   th: Th,
   td: Td,
   code: Block,
-  inlineCode: Code,
+  inlineCode: InlineCode,
   hr: HR,
   a: Anchor,
   YouTube: YouTube,
+  blockquote: Quote,
 };
 
 const Provider = ({ children }) => {
