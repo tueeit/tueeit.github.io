@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "export": "next export",
     "build": "next build",
+    "export": "next export && cp CNAME ./out",
     "start": "next start",
     "format": "npx prettier 'src/**/*.{js,jsx,ts,tsx,md,mdx,html,css,scss,json,yml}' --write || true",
     "lint": "npm run format && npm run lint:js && npm run lint:css && npm run lint:md",
