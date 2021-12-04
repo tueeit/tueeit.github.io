@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Flex, Spacer, Stack, Button } from '@chakra-ui/react';
+
+import logo from './logo.png';
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -22,9 +25,11 @@ export const Wrapper = styled.nav`
 const Navigation = () => {
   return (
     <Wrapper>
-      <Flex fontSize="1.5em" fontWeight="700">
+      <Flex fontWeight="700" alignItems="center">
         <Link href="/">
-          <a>TUEEIT</a>
+          <a>
+            <Image src={logo} alt="Logo" width="40px" height="40px" /> TUEEIT
+          </a>
         </Link>
       </Flex>
       <Spacer />
