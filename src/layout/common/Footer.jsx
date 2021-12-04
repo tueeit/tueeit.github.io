@@ -1,10 +1,13 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import { Flex, Spacer, Stack } from '@chakra-ui/react';
+import { Spacer, Stack } from '@chakra-ui/react';
+
+import { FaFacebookSquare, FaYoutube } from 'react-icons/fa';
 
 const Wrapper = styled.footer`
   display: flex;
-  padding: 4em 1.5em 2em;
+  flex-wrap: wrap;
+  padding: 2em 1.5em 1em;
   background-color: #274079;
   color: azure;
 `;
@@ -12,7 +15,7 @@ const Wrapper = styled.footer`
 const Footer = () => {
   return (
     <Wrapper>
-      <Stack direction="row" spacing="1em">
+      <Stack direction="row" alignItems="center" spacing="1em" py="1em">
         <Link href="mailto:tueeit@tueeit.org.tw">
           <a>聯絡我們</a>
         </Link>
@@ -24,7 +27,15 @@ const Footer = () => {
         </Link>
       </Stack>
       <Spacer />
-      <Flex>社群平台</Flex>
+      <Stack direction="row" alignItems="center" spacing="1em" fontSize="24px" py="1em">
+        社群平台
+        <a href="https://www.youtube.com/channel/UCc0KxmaoEG0p--YIGe1zNNA" target="_blank" rel="noopener noreferrer">
+          <FaYoutube />
+        </a>
+        <a href="https://www.facebook.com/TUEEIT" target="_blank" rel="noopener noreferrer">
+          <FaFacebookSquare />
+        </a>
+      </Stack>
     </Wrapper>
   );
 };
