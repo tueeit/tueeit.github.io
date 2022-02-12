@@ -8,7 +8,7 @@ const Wrapper = styled.footer`
   display: flex;
   flex-wrap: wrap;
   padding: 0 1.5em;
-  height: 60px;
+  height: 72px;
   background-color: #274079;
   color: azure;
 `;
