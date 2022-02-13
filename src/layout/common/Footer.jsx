@@ -22,7 +22,7 @@ const Footer = () => {
             <Image src="/images/logo-blue.png" alt="Logo" width="40px" height="40px" />
           </a>
         </Box>
-        <Link href="mailto:tueeit@tueeit.org.tw">
+        <Link href="/contacts">
           <a>聯絡我們</a>
         </Link>
         <Link href="/faq">
