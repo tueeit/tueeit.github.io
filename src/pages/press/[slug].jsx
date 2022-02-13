@@ -19,7 +19,7 @@ export default function PressPage({ source, frontMatter }) {
     <>
       <PressBreadcrumb title={frontMatter.title} />
       <Box>
-        <Heading1>{frontMatter.title}</Heading1>
+        <Heading1 fontSize="20px">{frontMatter.title}</Heading1>
       </Box>
       <Box>
         <MDXRemote {...source} components={components} />

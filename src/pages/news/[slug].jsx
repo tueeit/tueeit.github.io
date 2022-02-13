@@ -14,7 +14,7 @@ export default function PostPage({ source, frontMatter }) {
     <>
       <NewsBreadcrumb title={frontMatter.title} />
       <Box>
-        <Heading1>{frontMatter.title}</Heading1>
+        <Heading1 fontSize="20px">{frontMatter.title}</Heading1>
       </Box>
       <Box>
         <MDXRemote {...source} components={components} />
