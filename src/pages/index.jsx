@@ -15,10 +15,12 @@ export default function Index({ news }) {
         <Text fontSize="20px">首頁</Text>
       </Flex>
       <Stack spacing="16px">
-        {news.map((news) => (
-          <PostBlock key={news.filePath}>
+        {news.map((news, index) => (
+          <PostBlock key={news.filePath} index={index}>
             <Box>
-              <Text>{news.data.createdAt}</Text>
+              <Text fontSize="14px" color="#AAAAAA">
+                {news.data.createdAt}
+              </Text>
             </Box>
             <Box>
               <Link as={`/news/${news.filePath.replace(/\.mdx?$/, '')}`} href={`/news/[slug]`} passHref>

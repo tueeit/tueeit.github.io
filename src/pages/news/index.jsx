@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 import path from 'path';
 import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
-import { Box, Divider, Flex, Text, Stack } from '@chakra-ui/react';
+import { Box, Flex, Text, Stack } from '@chakra-ui/react';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
 export default function NewsIndexPage({ news }) {
@@ -13,10 +13,10 @@ export default function NewsIndexPage({ news }) {
         <Text fontSize="20px">最新消息</Text>
       </Flex>
       <Stack spacing="16px">
-        {news.map((news) => (
-          <PostBlock key={news.filePath}>
+        {news.map((news, index) => (
+          <PostBlock key={news.filePath} index={index}>
             <Box>
-              <Text fontSize="14px" color="#aaa">
+              <Text fontSize="14px" color="#AAAAAA">
                 {news.data.createdAt}
               </Text>
             </Box>
