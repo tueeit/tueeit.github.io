@@ -8,7 +8,7 @@ import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
 import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
 
-export default function Index({ news }) {
+export default function Index({ newsList }) {
   return (
     <>
       <AspectRatio maxWidth="100%" ratio={3 / 2}>
@@ -28,7 +28,7 @@ export default function Index({ news }) {
       </Center>
 
       <Stack spacing="16px">
-        {news.map((news, index) => (
+        {newsList.map((news, index) => (
           <PostBlock key={news.filePath} index={index}>
             <Box>
               <Text fontSize="14px" color="#AAAAAA">
@@ -54,7 +54,7 @@ export default function Index({ news }) {
   );
 }
 export function getStaticProps() {
-  const news = newsFilePaths.map((filePath) => {
+  const newsList = newsFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(NEWS_PATH, filePath));
     const { content, data } = matter(source);
 
@@ -64,7 +64,7 @@ export function getStaticProps() {
       filePath,
     };
   });
-  news.sort((a, b) => (a.data.createdAt > b.data.createAt ? 1 : -1));
+  newsList.sort((a, b) => (a.data.createdAt > b.data.createAt ? 1 : -1));
 
-  return { props: { news: news.slice(0, 5) } };
+  return { props: { newsList: newsList.slice(0, 5) } };
 }
