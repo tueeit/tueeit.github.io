@@ -15,7 +15,7 @@ const HR = () => {
   return <Divider my="1em" />;
 };
 
-const components = {
+export const components = {
   p: Paragraph,
   img: Image,
   h1: Heading1,
