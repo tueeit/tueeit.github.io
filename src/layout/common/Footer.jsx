@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import { Spacer, Stack, Image } from '@chakra-ui/react';
+import { Box, Spacer, Stack, Image } from '@chakra-ui/react';
 
 import { FaFacebookSquare, FaYoutube } from 'react-icons/fa';
 
@@ -9,19 +9,21 @@ const Wrapper = styled.footer`
   flex-wrap: wrap;
   padding: 0 1.5em;
   height: 72px;
-  background-color: #274079;
-  color: azure;
+  background-color: #4c769b;
+  color: #fff;
 `;
 
 const Footer = () => {
   return (
     <Wrapper>
       <Stack direction="row" alignItems="center" spacing="1em" py="1em">
-        <Link href="/">
-          <a>
-            <Image src="/images/logo-blue.svg" alt="Logo" width="40px" height="40px" />
-          </a>
-        </Link>
+        <Box display={['none', 'block']}>
+          <Link href="/">
+            <a>
+              <Image src="/images/logo-blue.png" alt="Logo" width="40px" height="40px" />
+            </a>
+          </Link>
+        </Box>
         <Link href="mailto:tueeit@tueeit.org.tw">
           <a>聯絡我們</a>
         </Link>
