@@ -2,7 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import path from 'path';
-import { Box, Button, Flex, Text, Stack } from '@chakra-ui/react';
+import { AspectRatio, Box, Button, Flex, Image, Text, Stack } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
@@ -11,6 +11,9 @@ import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
 export default function Index({ news }) {
   return (
     <>
+      <AspectRatio maxWidth="100%" ratio={3 / 2}>
+        <Image src="/images/homepage-union.jpeg" alt="連結。跨越。一同打造理想的生活型態。" objectFit="cover" />
+      </AspectRatio>
       <Flex paddingY="16px">
         <Text fontSize="20px">首頁</Text>
       </Flex>
