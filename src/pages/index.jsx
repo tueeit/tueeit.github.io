@@ -2,7 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import path from 'path';
-import { AspectRatio, Box, Button, Flex, Image, Text, Stack } from '@chakra-ui/react';
+import { AspectRatio, Box, Button, Center, Image, Text, Stack } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
@@ -12,11 +12,21 @@ export default function Index({ news }) {
   return (
     <>
       <AspectRatio maxWidth="100%" ratio={3 / 2}>
-        <Image src="/images/homepage-union.jpeg" alt="連結。跨越。一同打造理想的生活型態。" objectFit="cover" />
+        <Image src="/images/homepage-union.jpeg" alt="" objectFit="cover" />
       </AspectRatio>
-      <Flex paddingY="16px">
-        <Text fontSize="20px">首頁</Text>
-      </Flex>
+
+      <Center flexDirection="column" paddingY="32px">
+        <Text fontSize="20px" marginBottom="16px">
+          工會需要你我的力量
+        </Text>
+
+        <Link href="/join" passHref>
+          <Button as="a" colorScheme="red" variant="solid" paddingX="2em">
+            加入我們
+          </Button>
+        </Link>
+      </Center>
+
       <Stack spacing="16px">
         {news.map((news, index) => (
           <PostBlock key={news.filePath} index={index}>
@@ -43,7 +53,6 @@ export default function Index({ news }) {
     </>
   );
 }
-
 export function getStaticProps() {
   const news = newsFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(NEWS_PATH, filePath));
@@ -57,5 +66,5 @@ export function getStaticProps() {
   });
   news.sort((a, b) => (a.data.createdAt > b.data.createAt ? 1 : -1));
 
-  return { props: { news: news.slice(5) } };
+  return { props: { news: news.slice(0, 5) } };
 }
