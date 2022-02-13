@@ -4,6 +4,7 @@ import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import { components } from '@/layout/common/Provider';
 import path from 'path';
+import { Box } from '@chakra-ui/react';
 import { pressFilePaths, PRESS_PATH } from '@/utils/mdx';
 import { PressBreadcrumb } from '@/components/Breadcrumbs';
 import { Heading1 } from '@/components/Heading';
@@ -17,25 +18,12 @@ export default function PressPage({ source, frontMatter }) {
   return (
     <>
       <PressBreadcrumb title={frontMatter.title} />
-      <div className="press-header">
+      <Box>
         <Heading1>{frontMatter.title}</Heading1>
-      </div>
-      <main>
+      </Box>
+      <Box>
         <MDXRemote {...source} components={components} />
-      </main>
-
-      <style jsx>{`
-        .press-header h1 {
-          margin-bottom: 0;
-        }
-
-        .press-header {
-          margin-bottom: 2rem;
-        }
-        .description {
-          opacity: 0.6;
-        }
-      `}</style>
+      </Box>
     </>
   );
 }

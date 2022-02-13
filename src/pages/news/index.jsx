@@ -6,9 +6,14 @@ import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
 import { Box, Flex, Text, Stack } from '@chakra-ui/react';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
+import { NewsListBreadcrumb } from '@/components/Breadcrumbs';
+
 export default function NewsIndexPage({ newsList }) {
   return (
     <>
+      <Box>
+        <NewsListBreadcrumb />
+      </Box>
       <Flex paddingY="16px">
         <Text fontSize="20px">最新消息</Text>
       </Flex>

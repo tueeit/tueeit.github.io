@@ -6,9 +6,14 @@ import { pressFilePaths, PRESS_PATH } from '@/utils/mdx';
 import { Box, Flex, Text, Stack } from '@chakra-ui/react';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
+import { PressListBreadcrumb } from '@/components/Breadcrumbs';
+
 export default function PressIndexPage({ pressList }) {
   return (
     <>
+      <Box>
+        <PressListBreadcrumb />
+      </Box>
       <Flex paddingY="16px">
         <Text fontSize="20px">會員通訊</Text>
       </Flex>
