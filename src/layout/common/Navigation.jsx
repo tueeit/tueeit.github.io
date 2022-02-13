@@ -70,7 +70,7 @@ const Navigation = () => {
         <Drawer isOpen={menu.isOpen} placement="right" onClose={menu.onClose} finalFocusRef={menuButtonRef}>
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerCloseButton />
+            <DrawerCloseButton size="lg" />
             <DrawerHeader></DrawerHeader>
 
             <DrawerBody>
