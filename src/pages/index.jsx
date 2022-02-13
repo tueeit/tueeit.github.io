@@ -2,23 +2,23 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import path from 'path';
-import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
-import { Box, Divider, Flex, Text, Stack } from '@chakra-ui/react';
+import { Box, Button, Flex, Text, Stack } from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
-export default function NewsIndexPage({ news }) {
+import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
+
+export default function Index({ news }) {
   return (
     <>
       <Flex paddingY="16px">
-        <Text fontSize="20px">最新消息</Text>
+        <Text fontSize="20px">首頁</Text>
       </Flex>
       <Stack spacing="16px">
         {news.map((news) => (
           <PostBlock key={news.filePath}>
             <Box>
-              <Text fontSize="14px" color="#aaa">
-                {news.data.createdAt}
-              </Text>
+              <Text>{news.data.createdAt}</Text>
             </Box>
             <Box>
               <Link as={`/news/${news.filePath.replace(/\.mdx?$/, '')}`} href={`/news/[slug]`} passHref>
@@ -27,6 +27,13 @@ export default function NewsIndexPage({ news }) {
             </Box>
           </PostBlock>
         ))}
+        <Box>
+          <Link href="/news" passHref>
+            <Button as="a" colorScheme="teal" rightIcon={<ArrowForwardIcon />} variant="outline" isFullWidth>
+              查看更多
+            </Button>
+          </Link>
+        </Box>
       </Stack>
     </>
   );
@@ -45,5 +52,5 @@ export function getStaticProps() {
   });
   news.sort((a, b) => (a.data.createdAt > b.data.createAt ? 1 : -1));
 
-  return { props: { news } };
+  return { props: { news: news.slice(5) } };
 }
