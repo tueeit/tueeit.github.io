@@ -53,7 +53,7 @@ const Navigation = () => {
             關於本會
           </Button>
         </Link>
-        <Link href="/join" passHref>
+        <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7" passHref>
           <Button as="a" colorScheme="red" variant="solid">
             加入我們
           </Button>
@@ -90,7 +90,7 @@ const Navigation = () => {
                     關於本會
                   </Button>
                 </Link>
-                <Link href="/join" passHref>
+                <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7" passHref>
                   <Button as="a" colorScheme="red" variant="solid" onClick={menu.onClose}>
                     加入我們
                   </Button>

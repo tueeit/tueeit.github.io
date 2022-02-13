@@ -20,7 +20,7 @@ export default function Index({ newsList }) {
           工會需要你我的力量
         </Text>
 
-        <Link href="/join" passHref>
+        <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7" passHref>
           <Button as="a" colorScheme="red" variant="solid" paddingX="2em">
             加入我們
           </Button>
