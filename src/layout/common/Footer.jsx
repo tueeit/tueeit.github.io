@@ -18,11 +18,9 @@ const Footer = () => {
     <Wrapper>
       <Stack direction="row" alignItems="center" spacing="1em" py="1em">
         <Box display={['none', 'block']}>
-          <Link href="/">
-            <a>
-              <Image src="/images/logo-blue.png" alt="Logo" width="40px" height="40px" />
-            </a>
-          </Link>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/tueeit">
+            <Image src="/images/logo-blue.png" alt="Logo" width="40px" height="40px" />
+          </a>
         </Box>
         <Link href="mailto:tueeit@tueeit.org.tw">
           <a>聯絡我們</a>
