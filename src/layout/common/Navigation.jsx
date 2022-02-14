@@ -32,7 +32,7 @@ const Navigation = () => {
       <Box fontWeight="700" alignItems="center">
         <Link href="/">
           <a>
-            <Image src="/images/logo.svg" alt="Logo" width="300px" height="40px" />
+            <Image src="/images/logo.svg" alt="台灣電子電機資訊產業工會" width="300px" height="40px" />
           </a>
         </Link>
       </Box>
