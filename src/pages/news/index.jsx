@@ -40,10 +40,9 @@ export default function NewsIndexPage({ newsList }) {
 export function getStaticProps() {
   const newsList = newsFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(NEWS_PATH, filePath));
-    const { content, data } = matter(source);
+    const { data } = matter(source);
 
     return {
-      content,
       data,
       filePath,
     };

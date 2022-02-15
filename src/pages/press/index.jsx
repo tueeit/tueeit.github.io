@@ -40,10 +40,9 @@ export default function PressIndexPage({ pressList }) {
 export function getStaticProps() {
   const pressList = pressFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(PRESS_PATH, filePath));
-    const { content, data } = matter(source);
+    const { data } = matter(source);
 
     return {
-      content,
       data,
       filePath,
     };
