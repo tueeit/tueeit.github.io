@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             content: 'width=device-width, initial-scale=1',
           },
           { property: 'og:title', content: '台灣電子電機資訊產業工會' },
-          { property: 'og:image', content: 'https://www.tueeit.org.tw/default-preview.jpg' },
+          { property: 'og:image', content: 'https://www.tueeit.org.tw/images/default-preview.jpeg' },
           { property: 'og:image:type', content: 'image/jpg' },
         ]}
       />
