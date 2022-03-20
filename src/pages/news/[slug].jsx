@@ -3,6 +3,7 @@ import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import { components } from '@/layout/common/Provider';
+import Head from 'next/head';
 import path from 'path';
 import { Box } from '@chakra-ui/react';
 import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
@@ -12,6 +13,11 @@ import { Heading1 } from '@/components/Heading';
 export default function PostPage({ source, frontMatter }) {
   return (
     <>
+      <Head>
+        <meta property="og:title" content={`${frontMatter.title} - 台灣電子電機資訊產業工會`} />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+      </Head>
       <NewsBreadcrumb title={frontMatter.title} />
       <Box>
         <Heading1 fontSize="20px">{frontMatter.title}</Heading1>

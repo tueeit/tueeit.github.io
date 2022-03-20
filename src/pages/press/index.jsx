@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
@@ -11,6 +12,11 @@ import { PressListBreadcrumb } from '@/components/Breadcrumbs';
 export default function PressIndexPage({ pressList }) {
   return (
     <>
+      <Head>
+        <meta property="og:title" content="會員通訊 - 台灣電子電機資訊產業工會" />
+        <meta property="og:description" content="2015 -2021 年年報" />
+        <meta property="og:type" content="website" />
+      </Head>
       <Box>
         <PressListBreadcrumb />
       </Box>

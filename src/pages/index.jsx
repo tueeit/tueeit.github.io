@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
@@ -11,6 +12,16 @@ import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
 export default function Index({ newsList }) {
   return (
     <>
+      <Head>
+        <meta property="og:title" content="首頁 - 台灣電子電機資訊產業工會" />
+        <meta
+          property="og:description"
+          content="台灣電子電機資訊產業工會成立於2011年，組織對象為全台灣所有電子、電機、資訊相關產業勞工。本工會是2011年新工會法上路後，第一家以「科技業」為組織範圍的產業工會。目前會址設於新竹縣。"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.tueeit.org.tw/" />
+        <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
+      </Head>
       <AspectRatio maxWidth="100%" ratio={3 / 2}>
         <Image src="/images/homepage-union.jpeg" alt="" objectFit="cover" />
       </AspectRatio>
@@ -25,13 +36,21 @@ export default function Index({ newsList }) {
             加入我們
           </Button>
         </Link>
+
+        <Text marginTop="16px">
+          或
+          <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=5" passHref>
+            <Anchor>小額捐款</Anchor>
+          </Link>
+          支持電資工會
+        </Text>
       </Center>
 
       <Stack spacing="16px">
         {newsList.map((news, index) => (
           <PostBlock key={news.filePath} index={index}>
             <Box>
-              <Text fontSize="14px" color="#AAAAAA">
+              <Text fontSize="14px" lineHeight={1.6} color="#AAAAAA">
                 {news.data.createdAt}
               </Text>
             </Box>

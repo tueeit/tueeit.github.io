@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote';
@@ -17,6 +18,11 @@ import { Heading1 } from '@/components/Heading';
 export default function PressPage({ source, frontMatter }) {
   return (
     <>
+      <Head>
+        <meta property="og:title" content={`${frontMatter.title} - 台灣電子電機資訊產業工會`} />
+        <meta property="og:description" content="2015 -2021 年年報" />
+        <meta property="og:type" content="website" />
+      </Head>
       <PressBreadcrumb title={frontMatter.title} />
       <Box>
         <Heading1 fontSize="20px">{frontMatter.title}</Heading1>

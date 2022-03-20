@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
@@ -11,6 +12,16 @@ import { NewsListBreadcrumb } from '@/components/Breadcrumbs';
 export default function NewsIndexPage({ newsList }) {
   return (
     <>
+      <Head>
+        <meta property="og:title" content="最新消息 - 台灣電子電機資訊產業工會" />
+        <meta
+          property="og:description"
+          content={newsList
+            .slice(0, 5)
+            .map((news) => news.data.title)
+            .join('、')}
+        />
+      </Head>
       <Box>
         <NewsListBreadcrumb />
       </Box>
