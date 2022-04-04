@@ -33,7 +33,7 @@ const Footer = () => {
         </Link>
       </Stack>
       <Spacer />
-      <Stack direction="row" alignItems="center" spacing="1em" fontSize="24px">
+      <Stack display={['none', 'flex']} direction="row" alignItems="center" spacing="1em" fontSize="24px">
         社群平台
         <a href="https://www.youtube.com/channel/UCc0KxmaoEG0p--YIGe1zNNA" target="_blank" rel="noopener noreferrer">
           <FaYoutube />
