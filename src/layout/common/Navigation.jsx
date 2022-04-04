@@ -48,6 +48,11 @@ const Navigation = () => {
             會員通訊
           </Button>
         </Link>
+        <Link href="/membership-dues" passHref>
+          <Button as="a" colorScheme="whiteAlpha" color="white" variant="ghost">
+            會費繳交
+          </Button>
+        </Link>
         <Link href="/about" passHref>
           <Button as="a" colorScheme="whiteAlpha" color="white" variant="ghost">
             關於本會
@@ -83,6 +88,11 @@ const Navigation = () => {
                 <Link href="/press" passHref>
                   <Button as="a" colorScheme="blue" variant="ghost" onClick={menu.onClose}>
                     會員通訊
+                  </Button>
+                </Link>
+                <Link href="/membership-dues" passHref>
+                  <Button as="a" colorScheme="blue" variant="ghost" onClick={menu.onClose}>
+                    會費繳交
                   </Button>
                 </Link>
                 <Link href="/about" passHref>
