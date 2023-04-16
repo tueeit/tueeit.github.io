@@ -25,6 +25,9 @@ const Footer = () => {
         <Link href="/contacts">
           <a>聯絡我們</a>
         </Link>
+        <Link href="/regulation">
+          <a>本會規章</a>
+        </Link>
         <Link href="/faq">
           <a>常見問題</a>
         </Link>
