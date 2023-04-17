@@ -47,19 +47,6 @@ export default function Index({ newsList }) {
       </Center>
 
       <Stack spacing="16px">
-        <Box border="1px solid coral" padding="16px">
-          <Box>
-            <Text fontSize="14px" lineHeight={1.6} color="saddlebrown">
-              Important
-            </Text>
-          </Box>
-          <Box>
-            <Link href="/proposal/what-rookie-engineers-need-to-know" passHref>
-              <Anchor>『科技業職涯引路：菜鳥工程師求職須知』 2022 校園巡迴宣講</Anchor>
-            </Link>
-          </Box>
-        </Box>
-
         {newsList.map((news, index) => (
           <PostBlock key={news.filePath} index={index}>
             <Box>
