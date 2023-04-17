@@ -22,8 +22,8 @@ export default function Index({ newsList }) {
         <meta property="og:url" content="https://www.tueeit.org.tw/" />
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
-      <AspectRatio maxWidth="100%" ratio={1219 / 1175}>
-        <Image src="/images/events/2022-lecture-series-clip.png" alt="科技業職涯引路：菜鳥工程師求職須知" objectFit="cover" />
+      <AspectRatio maxWidth="100%" ratio={1880 / 1576}>
+        <Image src="/images/events/2023-general-assembly.png" alt="2023 年度會員大會" objectFit="cover" />
       </AspectRatio>
 
       <Center flexDirection="column" paddingY="32px">
