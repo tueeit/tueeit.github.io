@@ -23,7 +23,7 @@ export default function Index({ newsList }) {
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
       <AspectRatio maxWidth="100%" ratio={677 / 959}>
-        <Image src="/images/events/2023-you-are-right-to-disconnect.png" alt="離線權：不讀不回的下班時間 " objectFit="cover" />
+        <Image src="/images/events/2023-lecture-right-to-disconnect.png" alt="離線權：不讀不回的下班時間 " objectFit="cover" />
       </AspectRatio>
 
       <Center flexDirection="column" paddingY="32px">
