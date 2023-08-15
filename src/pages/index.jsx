@@ -22,8 +22,8 @@ export default function Index({ newsList }) {
         <meta property="og:url" content="https://www.tueeit.org.tw/" />
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
-      <AspectRatio maxWidth="100%" ratio={677 / 959}>
-        <Image src="/images/events/2023-lecture-right-to-disconnect.png" alt="離線權：不讀不回的下班時間 " objectFit="cover" />
+      <AspectRatio maxWidth="100%" ratio={640 / 640}>
+        <Image src="/images/events/2023-asus-union.png" alt="本會協助之華碩電腦企業工會於七月十三舉辦成立大會" objectFit="cover" />
       </AspectRatio>
 
       <Center flexDirection="column" paddingY="32px">
