@@ -48,6 +48,11 @@ const Navigation = () => {
             會員通訊
           </Button>
         </Link>
+        <Link href="/courses" passHref>
+          <Button as="a" colorScheme="whiteAlpha" color="white" variant="ghost">
+            歷年講座
+          </Button>
+        </Link>
         <Link href="/membership-dues" passHref>
           <Button as="a" colorScheme="whiteAlpha" color="white" variant="ghost">
             會費繳交
@@ -88,6 +93,11 @@ const Navigation = () => {
                 <Link href="/press" passHref>
                   <Button as="a" colorScheme="blue" variant="ghost" onClick={menu.onClose}>
                     會員通訊
+                  </Button>
+                </Link>
+                <Link href="/courses" passHref>
+                  <Button as="a" colorScheme="blue" variant="ghost" onClick={menu.onClose}>
+                    歷年講座
                   </Button>
                 </Link>
                 <Link href="/membership-dues" passHref>

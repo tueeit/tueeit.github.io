@@ -23,7 +23,9 @@ export default function Index({ newsList }) {
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
       <AspectRatio maxWidth="100%" ratio={623 / 551}>
-        <Image src="/images/events/course2023.png" alt="2023 巡迴演講" objectFit="cover" />
+        <Link href="/courses/2023" passHref>
+          <Image src="/images/events/course2023.png" alt="2023 巡迴演講" objectFit="cover" />
+        </Link>
       </AspectRatio>
 
       <Center flexDirection="column" paddingY="32px">
