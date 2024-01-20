@@ -22,9 +22,9 @@ export default function Index({ newsList }) {
         <meta property="og:url" content="https://www.tueeit.org.tw/" />
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
-      <AspectRatio maxWidth="100%" ratio={623 / 551}>
-        <Link href="/courses/2023" passHref>
-          <Image src="/images/events/course2023.png" alt="2023 巡迴演講" objectFit="cover" />
+      <AspectRatio maxWidth="100%" ratio={1920 / 1080}>
+        <Link href="/press/annual-report-2023" passHref>
+          <Image src="/images/2023-annual-report.jpg" alt="2023 年度工作報告" objectFit="cover" cursor="pointer" />
         </Link>
       </AspectRatio>
 
