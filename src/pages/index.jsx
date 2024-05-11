@@ -28,11 +28,6 @@ export default function Index({ newsList }) {
           <Image src="/images/2024-course.jpg" alt="2024 年度職涯講座" objectFit="cover" cursor="pointer" />
         </Link>
       </AspectRatio>
-      <AspectRatio maxWidth="100%" ratio={1920 / 1080}>
-        <Link href="/press/annual-report-2023" passHref>
-          <Image src="/images/2023-annual-report.jpg" alt="2023 年度工作報告" objectFit="cover" cursor="pointer" />
-        </Link>
-      </AspectRatio>
 
       <Center flexDirection="column" paddingY="32px">
         <Text fontSize="20px" marginBottom="16px">
