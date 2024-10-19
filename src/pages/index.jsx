@@ -23,9 +23,9 @@ export default function Index({ newsList }) {
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
 
-      <AspectRatio maxWidth="100%" ratio={1548 / 2039} marginBottom="16px">
-        <Link href="/courses/2024" passHref>
-          <Image src="/images/2024-course.jpg" alt="2024 年度職涯講座" objectFit="cover" cursor="pointer" />
+      <AspectRatio maxWidth="100%" ratio={1945 / 720} marginBottom="16px">
+        <Link href="https://www.facebook.com/photo/?fbid=953691860132471&set=a.642295257938801" passHref>
+          <Image src="/images/2024-work-promotion.png" alt="2024 年度工作" objectFit="cover" cursor="pointer" />
         </Link>
       </AspectRatio>
 
