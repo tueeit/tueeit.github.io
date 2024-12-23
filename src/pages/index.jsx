@@ -25,7 +25,7 @@ export default function Index({ newsList }) {
 
       <AspectRatio maxWidth="100%" ratio={2553 / 945} marginBottom="16px">
         <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7&utm_source=google&utm_medium=office+web" passHref>
-          <Image src="/images/current-target.png" alt="全台在電子、電機、資訊產業工作的勞工，都可以加入本會" objectFit="cover" cursor="pointer" />
+          <Image src="/images/current-target.png" alt="加入本會" objectFit="cover" cursor="pointer" />
         </Link>
       </AspectRatio>
 
