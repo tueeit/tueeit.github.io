@@ -23,9 +23,9 @@ export default function Index({ newsList }) {
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
 
-      <AspectRatio maxWidth="100%" ratio={712 / 1008} marginBottom="16px">
-        <Link href="https://tueeit.neticrm.tw/civicrm/event/info?reset=1&id=11&utm_source=google&utm_medium=office+web" passHref>
-          <Image src="/images/2024-second-lecture.png" alt="勞動講座 - 從情緒勒索到不法侵害" objectFit="cover" cursor="pointer" />
+      <AspectRatio maxWidth="100%" ratio={2553 / 945} marginBottom="16px">
+        <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7&utm_source=google&utm_medium=office+web" passHref>
+          <Image src="/images/current-target.png" alt="全台在電子、電機、資訊產業工作的勞工，都可以加入本會" objectFit="cover" cursor="pointer" />
         </Link>
       </AspectRatio>
 
