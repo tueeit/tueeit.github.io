@@ -23,9 +23,9 @@ export default function Index({ newsList }) {
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
 
-      <AspectRatio maxWidth="100%" ratio={2553 / 945} marginBottom="16px">
+      <AspectRatio maxWidth="100%" ratio={800 / 600} marginBottom="16px">
         <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7&utm_source=google&utm_medium=office+web" passHref>
-          <Image src="/images/current-target.png" alt="加入本會" objectFit="cover" cursor="pointer" />
+          <Image src="/images/2025-banner.png" alt="加入本會" objectFit="cover" cursor="pointer" />
         </Link>
       </AspectRatio>
 
