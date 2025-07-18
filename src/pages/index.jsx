@@ -3,11 +3,13 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import path from 'path';
-import { AspectRatio, Box, Button, Center, Image, Text, Stack } from '@chakra-ui/react';
+import { AspectRatio, Box, Button, Center, Flex, Image, Text, Stack } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Anchor from '@/components/Anchor';
 import PostBlock from '@/components/PostBlock';
 import { newsFilePaths, NEWS_PATH } from '@/utils/mdx';
+
+import { AddIcon } from '@chakra-ui/icons';
 
 export default function Index({ newsList }) {
   return (
@@ -22,31 +24,46 @@ export default function Index({ newsList }) {
         <meta property="og:url" content="https://www.tueeit.org.tw/" />
         <meta property="og:image" content="https://www.tueeit.org.tw/images/default-preview.jpeg" />
       </Head>
+      <Flex direction={["column"]} >
+        <Box width={["100%"]}>
+          <AspectRatio maxWidth="100%" ratio={800 / 600} marginBottom="16px">
+            <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7&utm_source=google&utm_medium=office+web" passHref>
+              <Image src="/images/2025-banner.png" alt="加入本會" objectFit="cover" cursor="pointer" />
+            </Link>
+          </AspectRatio>
+        </Box>
 
-      <AspectRatio maxWidth="100%" ratio={800 / 600} marginBottom="16px">
-        <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7&utm_source=google&utm_medium=office+web" passHref>
-          <Image src="/images/2025-banner.png" alt="加入本會" objectFit="cover" cursor="pointer" />
-        </Link>
-      </AspectRatio>
+        <Stack spacing="8px">
+          <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7" passHref>
+            <Button as="a" colorScheme="red" variant="outline" padding="3em">
+              <AddIcon w={4} h={4} mr={1} />
+              加入工會
+            </Button>
+          </Link>
+          <Stack direction="row" spacing="8px" width="100%">
+            <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=4" passHref>
+              <Button as="a" colorScheme="teal" variant="outline" padding="3em" width="50%">
+                續繳會費
+              </Button>
+            </Link>
+            <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=5" passHref>
+              <Button as="a" colorScheme="green" variant="outline" padding="3em" width="50%">
+                小額捐款
+              </Button>
+            </Link>
+          </Stack>
 
-      <Center flexDirection="column" paddingY="32px">
-        <Text fontSize="20px" marginBottom="16px">
+        </Stack>
+
+
+      </Flex>
+
+
+      <Center flexDirection="column" paddingY="64px">
+        <Text fontSize="24px">
           工會需要你我的力量
         </Text>
 
-        <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7" passHref>
-          <Button as="a" colorScheme="red" variant="solid" paddingX="2em">
-            加入我們
-          </Button>
-        </Link>
-
-        <Text marginTop="16px">
-          或
-          <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=5" passHref>
-            <Anchor>小額捐款</Anchor>
-          </Link>
-          支持電資工會
-        </Text>
       </Center>
 
       <Stack spacing="16px">
