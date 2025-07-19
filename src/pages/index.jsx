@@ -38,19 +38,18 @@ export default function Index({ newsList }) {
 
         <Stack spacing="8px">
           <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7" passHref>
-            <Button as="a" colorScheme="red" variant="outline" padding="3em">
-              <AddIcon w={4} h={4} mr={1} />
+            <Button as="a" colorScheme="red" variant="outline" padding="3em" size="lg" leftIcon={<AddIcon />}>
               加入工會
             </Button>
           </Link>
           <Stack direction="row" spacing="8px" width="100%">
             <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=4" passHref>
-              <Button as="a" colorScheme="teal" variant="outline" padding="3em" width="50%">
+              <Button as="a" colorScheme="teal" variant="outline" padding="3em" width="50%" size="lg">
                 續繳會費
               </Button>
             </Link>
             <Link href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=5" passHref>
-              <Button as="a" colorScheme="green" variant="outline" padding="3em" width="50%">
+              <Button as="a" colorScheme="green" variant="outline" padding="3em" width="50%" size="lg">
                 小額捐款
               </Button>
             </Link>
