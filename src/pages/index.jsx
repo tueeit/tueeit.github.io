@@ -26,14 +26,6 @@ export default function Index({ newsList }) {
       </Head>
       <Flex direction={['column']}>
         <Box width={['100%']}>
-          <AspectRatio maxWidth="100%" ratio={727 / 1024} marginBottom="16px">
-            <Link href="/courses/2025" passHref>
-              <Image src="/images/2025-course-poster.png" alt="講座資訊" objectFit="cover" cursor="pointer" />
-            </Link>
-          </AspectRatio>
-        </Box>
-
-        <Box width={['100%']}>
           <AspectRatio maxWidth="100%" ratio={800 / 600} marginBottom="16px">
             <Link
               href="https://tueeit.neticrm.tw/civicrm/contribute/transact?reset=1&id=7&utm_source=google&utm_medium=office+web"
