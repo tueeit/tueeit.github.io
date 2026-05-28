@@ -42,7 +42,7 @@ const PressBreadcrumb = (item = { title: '', path: '' }) => {
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="/press">會員通訊</BreadcrumbLink>
+        <BreadcrumbLink href="/press">工會年報</BreadcrumbLink>
       </BreadcrumbItem>
 
       <BreadcrumbItem isCurrentPage>
@@ -61,7 +61,7 @@ const PressListBreadcrumb = () => {
       ㄌ
       <BreadcrumbItem>
         <BreadcrumbLink href="/press" isCurrentPage>
-          會員通訊
+          工會年報
         </BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>

@@ -13,7 +13,7 @@ export default function PressIndexPage({ pressList }) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="會員通訊 - 台灣電子電機資訊產業工會" />
+        <meta property="og:title" content="工會年報 - 台灣電子電機資訊產業工會" />
         <meta property="og:description" content="2015 - 2026 年年報" />
         <meta property="og:type" content="website" />
       </Head>
@@ -21,7 +21,7 @@ export default function PressIndexPage({ pressList }) {
         <PressListBreadcrumb />
       </Box>
       <Flex paddingY="16px">
-        <Text fontSize="20px">會員通訊</Text>
+        <Text fontSize="20px">工會年報</Text>
       </Flex>
       <Stack spacing="16px">
         {pressList.map((press, index) => (

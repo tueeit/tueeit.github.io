@@ -45,7 +45,7 @@ const Navigation = () => {
         </Link>
         <Link href="/press" passHref>
           <Button as="a" colorScheme="whiteAlpha" color="white" variant="ghost">
-            會員通訊
+            工會年報
           </Button>
         </Link>
         <Link href="/courses" passHref>
@@ -92,7 +92,7 @@ const Navigation = () => {
                 </Link>
                 <Link href="/press" passHref>
                   <Button as="a" colorScheme="blue" variant="ghost" onClick={menu.onClose}>
-                    會員通訊
+                    工會年報
                   </Button>
                 </Link>
                 <Link href="/courses" passHref>
