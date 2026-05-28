@@ -61,6 +61,10 @@ export default function Index({ newsList }) {
         <Text fontSize="24px">工會需要你我的力量</Text>
       </Center>
 
+      <Flex paddingY="16px">
+        <Text fontSize="20px">最新消息</Text>
+      </Flex>
+
       <Stack spacing="16px">
         {newsList.map((news, index) => (
           <PostBlock key={news.filePath} index={index}>
