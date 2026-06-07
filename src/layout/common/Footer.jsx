@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Box, Spacer, Stack, Image } from '@chakra-ui/react';
 
 import { FaFacebookSquare, FaYoutube, FaInstagram } from 'react-icons/fa';
-/* import { FaThreads } from 'react-icons/fa6'; */
+import { FaThreads } from 'react-icons/fa6';
 
 const Wrapper = styled.footer`
   display: flex;
@@ -48,11 +48,11 @@ const Footer = () => {
         <a href="https://www.instagram.com/tueeit_0501" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
-        {/*
-          <a href="https://www.threads.com/@tueeit_0501" target="_blank" rel="noopener noreferrer">
-            <FaThreads />
-          </a>
-        */}
+
+        <a href="https://www.threads.com/@tueeit_0501" target="_blank" rel="noopener noreferrer">
+          <FaThreads />
+        </a>
+
       </Stack>
     </Wrapper>
   );
